@@ -2,6 +2,6 @@ allprojects {
     apply plugin: 'application'
     apply plugin: 'java'
 
-    apply from: 'https://bitbucket.org/jason_t/test-gradle-ssl/raw/f5d696f3d0880db5b74f2826b91666099a878d78/template.gradle'
+    apply from: 'https://raw.githubusercontent.com/JTarasovic/test-gradle-ssl/master/template.gradle'
 
 }
