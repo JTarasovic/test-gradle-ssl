@@ -1,0 +1,21 @@
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = mainClass
+
+run {
+    args = ['server', '../config.yml']
+}
+
+jar {
+    manifest {
+        attributes "Implementation-Title": "Application Template"
+        attributes 'Implementation-Title': project.name
+        attributes 'Implementation-Version': project.version
+        attributes 'Implementation-Vendor-Id': project.group
+        attributes "Main-Class": mainClass
+        attributes 'Built-Date': new Date() //now
+        attributes 'Built-By': System.getProperty('user.name')
+        attributes 'Build-Jdk': System.getProperty('java.version')
+    }
+}
